@@ -41,6 +41,7 @@ public class Main {
 
         // Demonstrate uniform treatment
         System.out.println("\n--- Uniform Treatment ---");
+
         System.out.println("Heroes Attack Power: " + heroes.getAttackPower());
         System.out.println("Enemy Raid Attack Power: " + enemies.getAttackPower());
         System.out.println("Heroes Total Health: " + heroes.getHealth());
@@ -48,10 +49,12 @@ public class Main {
 
         // Demonstrate damage distribution
         System.out.println("\n--- Damage Distribution ---");
+
         System.out.println("Applying 50 damage to Enemy Raid:");
         enemies.takeDamage(50);
 
         System.out.println("\n--- Final State ---");
+
         heroes.printTree("");
         enemies.printTree("");
 
