@@ -93,7 +93,7 @@ public class PartyComposite implements CombatNode {
                 ATK += child.getAttackPower();
             }
         }
-        System.out.println(indent + "+ " + name + " [HP:" + HP + ", ATK:" + ATK + "]");
+        System.out.println(indent  + "+ " + name + " [HP:" + HP + ", ATK:" + ATK + "]");
         for (CombatNode child : children) {
             child.printTree(indent + "   ");
         }

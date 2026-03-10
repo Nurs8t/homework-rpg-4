@@ -21,7 +21,7 @@ public class RaidGroup extends PartyComposite {
                 ATK += child.getAttackPower();
             }
         }
-        System.out.println(indent + "█ " + getName() + " [HP:" + HP + ", ATK:" + ATK + "]");
+        System.out.println(indent + getName() + " [HP:" + HP + ", ATK:" + ATK + "]");
         for (CombatNode child : children) {
             child.printTree(indent + "   ");
         }
@@ -39,7 +39,7 @@ public class RaidGroup extends PartyComposite {
         int damCh = amount / aliveChildren.size();
         int remDam = amount % aliveChildren.size();
 
-        System.out.println("   " + getName() + " takes " + amount + " damage distributed among " + aliveChildren.size() + " members");
+        System.out.println( getName() + " takes " + amount + " damage distributed among " + aliveChildren.size() + " members");
 
         for (CombatNode child : aliveChildren) {
             child.takeDamage(damCh);
